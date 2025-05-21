@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="José Luis Tecnología">
+    <meta hhtp-equiv="refresh" content="1500">
+    <title>Listas desordenadas</title>
+</head>
+
+<body bgcolor="lightblue">
+    <h1 align="center">Listas desordenadas</h1>
+    <p>Las listas desordenadas se definen con la etiqueta <strong>ul</strong> (unsorted list) y cada elemento de la
+        lista se define con la etiqueta <strong>li</strong> (list item). <br> Existen también la llamada lista de
+        definiciones, que se definen con la etiqueta <strong>dl</strong>, el término con <strong>dt</strong> y la
+        definición con la etiqueta <strong>dd</strong>.</p>
+    <!-- Estilos de guionado. disc circle square none -->
+    <div>
+        <h4 style="color: blue; background-color: yellow;">(1) Lista sin orden (viñetas). </h4>
+        <ul>
+            <li>Café</li>
+            <li>Leche</li>
+            <li>Té</li>
+        </ul>
+    </div>
+    <div>
+        <h4 style="color: yellow; background-color: red;">(2) Lista con círculos. </h4>
+        <ul style="list-style-type: circle;">
+            <li>Café</li>
+            <li>Leche</li>
+            <li>Té</li>
+        </ul>
+    </div>
+    <div>
+        <h4 style="color: purple; background-color: orange;">(3) Lista con cuadrados. </h4>
+        <ul style="list-style-type: square;">
+            <li>Café</li>
+            <li>Leche</li>
+            <li>Té</li>
+        </ul>
+    </div>
+    <div>
+        <h4 style="color: blue; background-color: lightgreen;">(4) Lista con alfabeto griego minúsculas. </h4>
+        <ul style="list-style-type:lower-greek">
+            <li>Café</li>
+            <li>Leche</li>
+            <li>Té</li>
+        </ul>
+    </div>
+    <!-- LISTA DE DEFINICIONES -->
+    <div>
+        <h4 align="right" style="color: green; background-color: yellow;">(5) LISTA DE DEFINICIONES dl dt dl </h4>
+        <!-- etiquetas LISTA <dl>, TÉRMINO <dt> y DEFINICIÓN <dd> -->
+        <dl>
+            <div>
+                <dt>NOMBRE:</dt>
+                <dd>Manuel</dd>
+            </div>
+            <!-- Podemos añadir subrayado y negrita para mejorar legilibidad-->
+            <dt><strong><U>APELLIDOS:</U></strong>
+            </dt>
+            <dd>García Fernández</dd>
+            <dt><strong><U>FECHA NACIMIENTO:</U></strong>
+            </dt>
+            <dd>23/02/1982</dd>
+            <dt><strong><U>LUGAR NACIMIENTO:</U></strong>
+            </dt>
+            <dd>Talavera de la Reina</dd>
+        </dl>
+    </div>
+</body>
+
+</html>

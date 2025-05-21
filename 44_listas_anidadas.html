@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="José Luis Tecnología">
+    <meta hhtp-equiv="refresh" content="1500">
+    <title>Listas anidadas</title>
+</head>
+
+<body style=background-color:lightyellow>
+    <h1 align="center" style="color: green;">Listas anidadas </h1>
+    <div>
+        <p>
+            Para anidar listas, lo mejor es crear las listas sin mezclar, unas debajo de las otras.
+        </p>
+    </div>
+    <div>
+        <h4 style="color: red" ; align="center">BEBIDAS DE CAFETERÍA (sin anidar)</h4>
+        <!--                   Lista ordenada -->
+        <ol type="1">
+            <li>CAFÉ</li>
+            <li>LECHE</li>
+            <li>INFUSIONES</li>
+        </ol>
+        <!--                   Lista ordenada -->
+        <ol type="a">
+            <li>Descafeinado</li>
+            <li>Cortado</li>
+            <li>Solo</li>
+        </ol>
+        <!--                   Lista ordenada -->
+        <ol type="1">
+            <li>De sobre</li>
+            <li>De máquina</li>
+        </ol>
+        <!--                   Lista ordenada -->
+        <ol type="1">
+            <li>Manzanilla</li>
+            <li>Té</li>
+            <li>Menta-poleo</li>
+        </ol>
+
+        <!--                   Lista desordenada -->
+        <ul style="list-style-type: disc;">
+            <li>Semidesnatada</li>
+            <li>Entera</li>
+            <li>Desnatada</li>
+        </ul>
+        <!--                   Lista ordenada -->
+        <ol style="list-style: decimal;">
+            <li>De India</li>
+            <li>De Ceilán</li>
+        </ol>
+        <!--                   Lista desordenada -->
+        <ul style="list-style: square;">
+            <li>Verde</li>
+            <li>Rojo</li>
+        </ul>
+
+    </div>
+    <h4 style="color: blue" ; align="center">BEBIDAS DE CAFETERÍA (anidadas)</h4>
+
+    <!-- Veamos ahora como se anidan las listas. -->
+    <div>
+        <ol type="1">
+            <li>Café<ol type="a">
+                    <li>Descafeinado</li>
+                    <li>Cortado</li>
+                    <li>Solo</li>
+                </ol>
+            </li>
+            <li>Leche<ul style="list-style-type: disc;">
+                    <li>Semidesnatada</li>
+                    <li>Entera</li>
+                    <li>Desnatada</li>
+                </ul>
+            </li>
+            <li>Infusiones<ol type="1">
+                    <li>Manzanilla</li>
+                    <li>Té<ul style="list-style: square;">
+                            <li>Verde<ol style="list-style: decimal;">
+                                    <li>De India</li>
+                                    <li>De Ceilán</li>
+                                </ol>
+                            </li>
+                            <li>Rojo</li>
+                        </ul>
+                    </li>
+                    <li>Menta-poleo</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+
+
+</body>
+
+</html>

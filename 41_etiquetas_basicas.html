@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Comentarios en HTML -->
+    <meta charset="UTF-8">
+    <!-- la parte de la cabecera la leen los navegadores y los boots de internet-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta hhtp-equiv="refresh" content="1500"> -->
+    <meta name="Autor" content="José Luis Tecnología">
+    <meta name="Keywords" content="HTML, CSS, WEB">
+    <title>Página Hola mundo ....t</title>
+</head>
+
+<body bgcolor="lightyellow">
+    <!-- Al comenzar a programar el estilo es INLINE, dentro de la etiqueta -->
+    <!-- Hay 6 tamaños de encabezado -->
+    <h1 align="center">Encabezados de tipo 1 (más grande)</h1>
+    <h2>Encabezados de tipo 2</h2>
+    <h3 align="right">Encabezados de tipo 3</h3>
+    <h4 style=color:red align="center">Encabezados de tipo 4</h4>
+    <h5>Encabezados de tipo 5</h5>
+    <h6 align="left">Encabezados de tipo 6</h6>
+    <!-- Veamos ahora varios contenedores para el texto  -->
+    <p>
+        Esto sería el PRIMER párrafo.
+    </p>
+    <!-- para trazar una línea horizontal ponemos una etiqueta (no tiene cierre, solo apertura-->
+    <hr>
+    <!-- el contenedor div nos permite guardar otros contenedor más pequeños-->
+    <div>
+        <p>Esto sería el SEGUNDO párrafo. Es un bloque que ocupa toda la anchura.
+            Observa que los párrafos tienen configuración de bloque,no de linea.
+        </p>
+        <p>Veamos otro tipo de <span>contenedor inline </span> <span>de texto en linea</span>
+        </p>
+        <p>
+            Vamos a poner el texto con diferentes formatos para el texto: <span><strong>negrita</strong></span> <span><u>subrayado</u> <em>cursiva.</em></span>
+        </p>
+        <p>Podemos escribir también <strong>subíndices</strong>, por ejemplo H<sub>2</sub>O o también podemos poner <strong>superíndice</strong>, como X<sup>3</sup>.</p>
+        <p style="color: red;">
+            Todo el párrafo en rojo y si queremos texto <bold> <u>negrita, subrayado.</u></bold>
+        </p>
+        <p style="font-size: 15px; color: rgb(13, 0, 255);"> Texto con tamaño 5, color seleccionado por RGH hexadecimal distinto. </font>
+        </p>
+        <p>Veamos un párrafo donde podemos cambiar de linea empleando la etiqueta br.
+            Con esta etiqueta <br> podemos hacer un salto de línea. <br>
+        </p>
+    </div>
+    <h1>ENLACES</h1>
+    <div><span>El enlace a una dirección web se hace con la etiqueta</span>
+        <span><strong> a </strong> seguido de href con la dirección web. </span> <br>
+        <a href="www.youtube.es">Enlace a YouTube (tiene un fallo.....) </a> <br>
+        Si queremos que el enlace se abra en una ventana nuevo tenemos que usar además la etiqueta <strong>target</strong> <br>
+        <a href="https://www.google.com/" target="_blank">Enlace a Google</a>
+    </div>
+</body>
+
+</html>

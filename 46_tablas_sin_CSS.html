@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="José Luis Tecnología">
+
+    <title>Creación de tablas sin usar CSS</title>
+</head>
+
+<body style="background-color: bisque;">
+    <h2 style="text-align:center ;color:blue; background-color: aquamarine;">TABLAS en HTML</h2>
+    <section id="tabla1">
+        <h4 style="color:aqua; background-color: blue; text-align: center;">TABLA 1</h4>
+        <p>Veamos una tabla sencilla usando las etiquetas <b>table</b>, <b>tr</b>, <b>td</b> y <b>th.</b></p>
+        <table style="font-size: smaller;">
+            <caption>-- Tabla sencilla -- </caption>
+            <tr>
+                <td>Grupo 1</td>
+                <td>Chicos</td>
+                <td>Chicas</td>
+                <td>Total</td>
+            </tr>
+            <tr>
+                <td>3º A</td>
+                <td>13</td>
+                <td>15</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>3º B</td>
+                <td>15</td>
+                <td>14</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>3º C</td>
+                <td>10</td>
+                <td>16</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>3º D</td>
+                <td>14</td>
+                <td>14</td>
+                <td>28</td>
+            </tr>
+        </table>
+    </section>
+    <section id="tabla2">
+        <h4 style="color:aqua; background-color: red;text-align: center;">TABLA 2</h4>
+        <p>Para poder separar estilos existen otras etiquetas para las tablas: <b>caption</b>, <b>thead</b>,
+            <b>tbody</b> y <b>tfoot</b>.
+
+        </p>
+        <table>
+            <caption>Encabezado de la tabla 2</caption>
+            <thead>
+                <tr>
+                    <th>Grupo 2</th><th>Chicos</th><th>Chicas</th><th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>3º A</th>
+                    <td>13</td>
+                    <td>15</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <th>3º B</th>
+                    <td>15</td>
+                    <td>14</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <th>3º C</th>
+                    <td>10</td>
+                    <td>16</td>
+                    <td>26</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>3º D</th>
+                    <td>14</td>
+                    <td>14</td>
+                    <td>28</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section id="tabla3">
+        <h4 style="color:aqua; background-color: red;text-align: center;">TABLA 3</h4>
+        <p>Para poder separar estilos existen otras etiquetas para las tablas: <b>thead</b>, <b>tbody</b> y
+            <b>caption</b>. Veamos una tabla con estilos empleando estas etiquetas.
+        </p>
+        <table
+            style="
+            text-align: center; 
+            background-color: aqua; 
+            border-style: double;
+            border-width: 2pt; 
+            border-style:solid; 
+            border-color: red;">
+
+            <caption style="background-color:blueviolet; color: yellow;">Encabezado de la tabla 3</caption>
+            <thead style="background-color: azure;">
+                <tr>
+                    <th>Grupo 3</th>
+                    <th>Chicos</th>
+                    <th>Chicas</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody style="background-color: yellowgreen;">
+                <tr>
+                    <th>3º A</th>
+                    <td>13</td>
+                    <td>15</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <th>3º B</th>
+                    <td>15</td>
+                    <td>14</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <th>3º C</th>
+                    <td>10</td>
+                    <td>16</td>
+                    <td>26</td>
+                </tr>
+            </tbody>
+            <tfoot style="background-color: grey; color: whitesmoke">
+                <tr>
+                    <th>TOTAL</th>
+                    <td>38</td>
+                    <td>35</td>
+                    <td>83</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section id="tabla4">
+        <h4 style="color:aqua; background-color: red;text-align: center;">TABLA 4</h4>
+        <p>Vamos a ver aquí una tabla con una columna combinada, usando la etiqueta <b>rowspan</b>. <br> Sombreamos la
+            columna combinada.
+        </p>
+        <table
+            style=" text-align: center; background-color: lightskyblue; border-style: double; border-width: 2pt; border-style:solid; border-color: red;">
+            <tr>
+                <th rowspan="5" style="background-color: aliceblue;">MÁTRICULAS 24-25</th>
+                <th>Universidad</th>
+                <th>Inf</th>
+                <th>Ind</th>
+                <th>Med</th>
+                <th>Enf</th>
+            </tr>
+            <tr>
+                <th>UCLM</th>
+                <td>13</td>
+                <td>15</td>
+                <td>31</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <th>UAM</th>
+                <td>19</td>
+                <td>14</td>
+                <td>29</td>
+                <td>08</td>
+            </tr>
+            <tr>
+                <th>UPM</th>
+                <td>22</td>
+                <td>23</td>
+                <td>32</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <th>UCJC</th>
+                <td>10</td>
+                <td>16</td>
+                <td>26</td>
+                <td>28</td>
+            </tr>
+        </table>
+    </section>
+    <section id="tabla5">
+        <h4 style="color:aqua; background-color: red;text-align: center;">TABLA 5</h4>
+        <p>Vamos a ver aquí una tabla con la primera fila combinada, usando la etiqueta <b>colspan</b>. <br>
+            Sombrearemos la fila combinada con otro color.
+        </p>
+        <table
+            style=" text-align: center; background-color:greenyellow; border-style: double; border-width: 2pt; border-style:solid; border-color: red;">
+            <tr>
+                <th colspan="5" style="background-color: lightcoral;">MÁTRICULAS 24-25</th>
+            </tr>
+            <tr>
+                <th>Grado</th>
+                <th>UCLM</th>
+                <th>UAM</th>
+                <th>UPM</th>
+                <TH>UCJC</TH>
+            </tr>
+            <tr>
+                <th>Informática</th>
+                <td>13</td>
+                <td>19</td>
+                <td>22</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <th>Industrial</th>
+                <td>15</td>
+                <td>14</td>
+                <td>23</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th>Medicina</th>
+                <td>31</td>
+                <td>29</td>
+                <td>32</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <th>Enfermería</th>
+                <td>25</td>
+                <td>08</td>
+                <td>11</td>
+                <td>28</td>
+            </tr>
+        </table>
+    </section>
+    <section id="tabla6">
+        <h4 style="color:aqua; background-color: red;text-align: center;">TABLA 6</h4>
+        <p>Vamos a ver aquí una tabla con dos celdas horizontales interiores combinadas, usando la etiqueta
+            <b>colspan</b>. <br>
+            Sombreamos las celdas combinadas con otro color de fondo.
+        </p>
+        <table style="background-color: lightblue;">
+            <tr>
+                <td>(TABLA 6)</td>
+                <td>chicos</td>
+                <td>chicas</td>
+                <td>Total</td>
+            </tr>
+            <tr>
+                <td>3A</td>
+                <td colspan="2" style="background-color: aqua;">Combina dos celdas horizontales</td>
+                <td>68</td>
+            </tr>
+            <tr>
+                <td>3B</td>
+                <td>23</td>
+                <td>45</td>
+                <td>68</td>
+            </tr>
+        </table>
+    </section>
+    <section id="tabla7">
+        <h4 style="color:aqua; background-color: red;text-align: center;">TABLA 7</h4>
+        <p>Vamos a ver aquí una tabla con las celdas combinadas, usando las etiquetas <b>colspan</b> y <b>rowspan</b>.
+            Nos centraremos en como unir celdas y por tanto no pondremos etiquetas de estilo.
+        </p>
+        <table style="background-color: lightgreen">
+            <tr>
+                <td>(TABLA 7)</td>
+                <td>Chicos</td>
+                <td>Chicas</td>
+                <td>TOTAL</td>
+            </tr>
+            <tr>
+                <td>3º A</td>
+                <td rowspan="3" style="background-color: red;">Combina 3 celdas verticales</td>
+                <td>68</td>
+                <td>68</td>
+            </tr>
+            <tr>
+                <td>3º B</td>
+                <td>65</td>
+                <td>65</td>
+            <tr>
+                <td>3º C</td>
+                <td>12</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>3º D</td>
+                <td>15</td>
+                <td>11</td>
+                <td>26</td>
+            </tr>
+            </tr>
+        </table>
+    </section>
+    <section id="tabla8">
+        <h4 style="color:blue; background-color: yellow;text-align: center;">TABLA 8</h4>
+        <p>Vamos a ver aquí una tabla con un rango de celdas combinadas, usando las etiquetas <b>colspan</b> y
+            <b>rowspan</b> <br> El rango de celdas combinados lo sombrearemos con otro color de fondo.
+        </p>
+        <table style="background-color: orange">
+            <tr>
+                <td>(TABLA 8)</td>
+                <td>Chicos</td>
+                <td>Chicas</td>
+                <td>TOTAL</td>
+            </tr>
+            <tr>
+                <td>3º A</td>
+                <td colspan="2" rowspan="3" style="background-color: lightcoral;">Combina rango 2x3 celdas</td>
+                <td>68</td>
+            </tr>
+            <tr>
+                <td>3º B</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>3º C</td>
+                <td>44</td>
+            </tr>
+            <tr>
+                <td>3º D</td>
+                <td>34</td>
+                <td>23</td>
+                <td>55</td>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>

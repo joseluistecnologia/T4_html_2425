@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="José Luis Tecnologia">
+    <title>Creación de Formularios con HTML</title>
+</head>
+
+<body style="background-color: chartreuse;font-size: 10px;">
+    <div>
+        <h2 style="text-align:center; color:aquamarine;background-color: blueviolet; ">
+            FORMULARIOS en HTML
+        </h2>
+        <p style="text-align: justify;">
+            Los formularios web son uno de los principales puntos de interacción entre un usuario y un sitio web o
+            aplicación. <br><br> Los formularios permiten a los usuarios la introducción de datos, que generalmente se
+            envían a un servidor web para su procesamiento y almacenamiento.
+        </p>
+    </div>
+    
+    <h4>1. Formulario introducción texto en una línea. <br> Escribe tu nombre:</h4>
+    <form action="mailto:tuUsuario@iessanisidrovirtual.com" method="post" enctype="text/plain">
+        <input type="text" name="Nombre" value="Dime tu nombre">
+        <input type="text" name="Apellido" value="Dime tu apellido">
+    </form>
+
+    <h4>2. Formulario introducción texto en una línea tipo contraseña.<br> Escribe tu curso:</h4>
+    <form action="mailto:tuUsuario@iessanisidrovirtual.com" method="post" enctype="text/plain">
+        <input type="password" name="Nombre">
+    </form>
+
+    <h4>3. Formulario introducción texto varias líneas. <br>Escribe tu dirección</h4>
+    <form action="mailto:tuUsuario@iessanisidrovirtual.com" method="post" enctype="text/plain">
+        <textarea name="comentarios" rows="4" cols="60"></textarea>
+    </form>
+
+    <h4>4. Formulario introducción por medio de menús. <br>Elige tu color preferido:</h4>
+    <form action="mailto:tuUsuario@iessanisidrovirtual.com" method="post" enctype="text/plain">
+        <select name="Color preferido">
+            <option>Rojo</option>
+            <option>Verde</option>
+            <option>Azul</option>
+        </select>
+    </form>
+
+    <h4>5. Formulario de confirmación.<br> ¿Incluir en lista correo?</h4>
+    <form action="mailto:tuUsuario@iessanisidrovirtual.com" method="post" enctype="text/plain">
+        <input type="checkbox" name="lista"> Si, por favor.
+    </form>
+
+    <h4>6. Formulario de confirmación premarcado.<br> ¿Incluir en lista correo?</h4>
+    <form action="mailto:tuUsuario@iessanisidrovirtual.com" method="post" enctype="text/plain">
+        <input type="checkbox" name="lista" checked=""> Si, por favor.
+    </form>
+
+    <h4>7. Formulario una opción entre varias RADIO.</h4>
+    <form action="mailto:tuUsuario@iessanisidrovirtual.com" method="post" enctype="text/plain">
+        ¿Cual es tu sistema operativo preferido? <br>
+        <input type="radio" name="Sistema Operativo" value="Windows" checked=""> Windows<br>
+        <input type="radio" name="Sistema Operativo" value="Ubuntu"> Ubuntu<br>
+        <input type="radio" name="Sistema Operativo" value="IOS"> IOS<br>
+    </form>
+
+    <h4>8. Botones de envío y borrado.</h4>
+    <form action="mailto:tuUsuario@iessanisidrovirtual.com" method="post" enctype="text/plain">
+        <input type="text" name="Nombre" value="Introduce tu nombre">
+        <input type="submit" name="Enviar" value="Enviar datos">
+        <input type="reset" name="Restablecer">
+    </form>
+    <div>
+        <hr>
+        <hr><br><br>
+        <p style="color:darkgray; text-align: right;">
+            <a href="index.html" target="_self">Revisar para enlazar a la página principal </a>
+        </p>
+    </div>
+</body>
+
+</html>
